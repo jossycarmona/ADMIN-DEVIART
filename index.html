@@ -107,6 +107,17 @@
   .total-row .t-label  { color: #f1f5f9; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; }
   .total-row .t-amount { color: #fff; font-size: 16px; font-weight: 700; }
   .footer { text-align: center; font-size: 10px; color: #94a3b8; margin-top: 24px; padding-top: 16px; border-top: 1px solid #e2e8f0; }
+  .det-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 22px; }
+  .det-cat { break-inside: avoid; }
+  .det-cat-head { display: flex; justify-content: space-between; align-items: baseline; padding: 6px 0 6px 10px; border-left: 3px solid #cbd5e1; margin-bottom: 6px; }
+  .det-cat-name { font-size: 12px; font-weight: 700; color: #0f172a; }
+  .det-cat-total { font-size: 12px; font-weight: 700; color: #334155; }
+  .det-rubro { padding: 5px 0 5px 13px; border-bottom: 1px solid #f4f6fb; }
+  .det-rubro:last-child { border-bottom: none; }
+  .det-rubro-top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+  .det-rubro-name { font-size: 11px; font-weight: 600; color: #334155; }
+  .det-rubro-amt { font-size: 11px; font-weight: 700; color: #0f172a; white-space: nowrap; }
+  .det-rubro-prov { font-size: 9px; color: #94a3b8; margin-top: 2px; line-height: 1.35; }
 </style>
 </head>
 <body>
@@ -397,6 +408,123 @@
       <span class="t-label">TOTAL GASTOS FIJOS</span>
       <span class="t-amount">$918,348.23</span>
     </div>
+  </div>
+</div>
+
+<div class="card" style="margin-bottom:20px;">
+  <div class="card-header">
+    <div class="card-title">Desglose de Gastos Fijos &nbsp;·&nbsp; Junio 2026</div>
+    <span class="badge badge-gray">$918,348.23 &nbsp;·&nbsp; 18 rubros</span>
+  </div>
+  <div class="det-grid">
+      <div class="det-cat">
+        <div class="det-cat-head" style="border-left-color:#f59e0b;">
+          <span class="det-cat-name">🏢 Arrendamientos</span>
+          <span class="det-cat-total">$243,418.00</span>
+        </div>
+        <div class="det-rubro">
+          <div class="det-rubro-top"><span class="det-rubro-name">Arrendamiento de vehículos</span><span class="det-rubro-amt">$243,418.00</span></div>
+          <div class="det-rubro-prov">Reparto Util</div>
+        </div>
+      </div>
+      <div class="det-cat">
+        <div class="det-cat-head" style="border-left-color:#22c55e;">
+          <span class="det-cat-name">👥 Nómina &amp; Capital Humano</span>
+          <span class="det-cat-total">$308,625.70</span>
+        </div>
+        <div class="det-rubro">
+          <div class="det-rubro-top"><span class="det-rubro-name">Nómina</span><span class="det-rubro-amt">$230,863.20</span></div>
+          <div class="det-rubro-prov">Deviart</div>
+        </div>
+        <div class="det-rubro">
+          <div class="det-rubro-top"><span class="det-rubro-name">Seguridad social (IMSS)</span><span class="det-rubro-amt">$46,630.25</span></div>
+          <div class="det-rubro-prov">Instituto Mexicano del Seguro Social</div>
+        </div>
+        <div class="det-rubro">
+          <div class="det-rubro-top"><span class="det-rubro-name">Honorarios y servicios profesionales</span><span class="det-rubro-amt">$31,132.25</span></div>
+          <div class="det-rubro-prov">Jose Roberto Muro Sanchez · Maria Leticia Jimenez Gil · Grupo Innovador RAV · Maria Guadalupe Vera Padilla</div>
+        </div>
+      </div>
+      <div class="det-cat">
+        <div class="det-cat-head" style="border-left-color:#ec4899;">
+          <span class="det-cat-name">📱 Marketing Digital</span>
+          <span class="det-cat-total">$175,781.43</span>
+        </div>
+        <div class="det-rubro">
+          <div class="det-rubro-top"><span class="det-rubro-name">Agencia de marketing</span><span class="det-rubro-amt">$89,053.07</span></div>
+          <div class="det-rubro-prov">Cesar Ochoa Castellanos</div>
+        </div>
+        <div class="det-rubro">
+          <div class="det-rubro-top"><span class="det-rubro-name">Publicidad digital</span><span class="det-rubro-amt">$80,912.11</span></div>
+          <div class="det-rubro-prov">Meta Platforms · Google Operaciones de Mexico</div>
+        </div>
+        <div class="det-rubro">
+          <div class="det-rubro-top"><span class="det-rubro-name">Herramientas de marketing</span><span class="det-rubro-amt">$5,816.25</span></div>
+          <div class="det-rubro-prov">Klaviyo · Pixel Labs / Helium 10 · Canva</div>
+        </div>
+      </div>
+      <div class="det-cat">
+        <div class="det-cat-head" style="border-left-color:#64748b;">
+          <span class="det-cat-name">🔧 Operación &amp; Servicios</span>
+          <span class="det-cat-total">$95,525.37</span>
+        </div>
+        <div class="det-rubro">
+          <div class="det-rubro-top"><span class="det-rubro-name">Combustible y viáticos</span><span class="det-rubro-amt">$30,000.00</span></div>
+          <div class="det-rubro-prov">Ivan Garcia Arce</div>
+        </div>
+        <div class="det-rubro">
+          <div class="det-rubro-top"><span class="det-rubro-name">Paquetería y logística</span><span class="det-rubro-amt">$21,303.36</span></div>
+          <div class="det-rubro-prov">Federal Express (FEDEX)</div>
+        </div>
+        <div class="det-rubro">
+          <div class="det-rubro-top"><span class="det-rubro-name">Energía eléctrica</span><span class="det-rubro-amt">$16,327.00</span></div>
+          <div class="det-rubro-prov">Comision Federal de Electricidad</div>
+        </div>
+        <div class="det-rubro">
+          <div class="det-rubro-top"><span class="det-rubro-name">Insumos y caja chica</span><span class="det-rubro-amt">$16,041.03</span></div>
+          <div class="det-rubro-prov">Nueva Wal Mart de Mexico · Caja Chica Emakers</div>
+        </div>
+        <div class="det-rubro">
+          <div class="det-rubro-top"><span class="det-rubro-name">Mantenimiento y otros servicios</span><span class="det-rubro-amt">$11,853.98</span></div>
+          <div class="det-rubro-prov">Parque Corporativo Belenes Norte · Fumylim · Israel Meza Jimenez</div>
+        </div>
+      </div>
+      <div class="det-cat">
+        <div class="det-cat-head" style="border-left-color:#8b5cf6;">
+          <span class="det-cat-name">💻 Tecnología &amp; Plataformas</span>
+          <span class="det-cat-total">$73,155.51</span>
+        </div>
+        <div class="det-rubro">
+          <div class="det-rubro-top"><span class="det-rubro-name">Desarrollo y soporte de plataformas</span><span class="det-rubro-amt">$25,011.19</span></div>
+          <div class="det-rubro-prov">Fernando Preciado Silva · Integracion Estrategica de Sistemas de Informacion · Aplicaciones y Proyectos Computacionales · 3SIT Integración y Soluciones</div>
+        </div>
+        <div class="det-rubro">
+          <div class="det-rubro-top"><span class="det-rubro-name">Ciberseguridad y facturación electrónica</span><span class="det-rubro-amt">$20,247.97</span></div>
+          <div class="det-rubro-prov">Soluciones Para Ti · Identificacion Electronica y Automatizacion</div>
+        </div>
+        <div class="det-rubro">
+          <div class="det-rubro-top"><span class="det-rubro-name">Plataforma ecommerce</span><span class="det-rubro-amt">$16,470.43</span></div>
+          <div class="det-rubro-prov">Shopify</div>
+        </div>
+        <div class="det-rubro">
+          <div class="det-rubro-top"><span class="det-rubro-name">Infraestructura, software e IA</span><span class="det-rubro-amt">$11,425.92</span></div>
+          <div class="det-rubro-prov">Rackspace · Adobe · Nagence · Amazon.com Services · Openai · Celonis</div>
+        </div>
+      </div>
+      <div class="det-cat">
+        <div class="det-cat-head" style="border-left-color:#0ea5e9;">
+          <span class="det-cat-name">📡 Telecomunicaciones</span>
+          <span class="det-cat-total">$21,842.22</span>
+        </div>
+        <div class="det-rubro">
+          <div class="det-rubro-top"><span class="det-rubro-name">Telefonía</span><span class="det-rubro-amt">$12,984.23</span></div>
+          <div class="det-rubro-prov">AT&T Comercializacion Movil · Telefonos de Mexico (TELMEX)</div>
+        </div>
+        <div class="det-rubro">
+          <div class="det-rubro-top"><span class="det-rubro-name">Internet</span><span class="det-rubro-amt">$8,857.99</span></div>
+          <div class="det-rubro-prov">Megacable Comunicaciones de Mexico · Total Play Telecomunicaciones · Starlink</div>
+        </div>
+      </div>
   </div>
 </div>
 
