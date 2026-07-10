@@ -132,6 +132,16 @@
   .pp-row .a.neg { color: #dc2626; }
   .pp-row .a.pos { color: #15803d; }
   .pp-tag { font-size: 8px; padding: 1px 5px; border-radius: 6px; background: #fffbeb; color: #b45309; margin-left: 5px; }
+  .cal-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 22px; }
+  .cal-row { display: flex; align-items: center; gap: 11px; padding: 7px 10px; border-radius: 9px; margin-bottom: 5px; background: #f8fafc; border: 1px solid #f1f5f9; }
+  .cal-date { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 44px; background: #0f172a; border-radius: 8px; padding: 5px 4px; }
+  .cal-d { font-size: 16px; font-weight: 700; color: #fff; line-height: 1; }
+  .cal-m { font-size: 8px; color: #cbd5e1; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px; }
+  .cal-ev { flex: 1; }
+  .cal-c { font-size: 11.5px; font-weight: 600; color: #0f172a; }
+  .cal-amt { font-size: 13px; font-weight: 700; color: #dc2626; white-space: nowrap; }
+  .cal-amt.soft { color: #b45309; font-size: 10.5px; font-weight: 600; }
+  .cal-nota { font-size: 9px; color: #94a3b8; margin-top: 8px; }
 </style>
 </head>
 <body>
@@ -415,6 +425,75 @@
       <span class="t-amount">$949,968.73</span>
     </div>
   </div>
+</div>
+
+<div class="card" style="margin-bottom:20px;">
+  <div class="card-header">
+    <div class="card-title">🗓️ Calendario de Pagos &nbsp;·&nbsp; Julio 2026</div>
+    <span class="badge badge-amber">Programación</span>
+  </div>
+  <div class="cal-cols">
+    <div>
+      <div class="cal-row">
+        <div class="cal-date"><span class="cal-d">12</span><span class="cal-m">jul · dom</span></div>
+        <div class="cal-ev"><div class="cal-c">🏢 Arrendamex — cuota autos</div></div>
+        <span class="cal-amt">$108,189.00</span>
+      </div>
+      <div class="cal-row">
+        <div class="cal-date"><span class="cal-d">15</span><span class="cal-m">jul · mié</span></div>
+        <div class="cal-ev"><div class="cal-c">👥 IMSS</div></div>
+        <span class="cal-amt">~$46,630.00</span>
+      </div>
+      <div class="cal-row">
+        <div class="cal-date"><span class="cal-d">15</span><span class="cal-m">jul · mié</span></div>
+        <div class="cal-ev"><div class="cal-c">👥 Nómina — quincena</div></div>
+        <span class="cal-amt soft">Estimado</span>
+      </div>
+      <div class="cal-row">
+        <div class="cal-date"><span class="cal-d">17</span><span class="cal-m">jul · vie</span></div>
+        <div class="cal-ev"><div class="cal-c">👥 Nómina — semanal (viernes)</div></div>
+        <span class="cal-amt soft">Estimado</span>
+      </div>
+      <div class="cal-row">
+        <div class="cal-date"><span class="cal-d">17</span><span class="cal-m">jul · vie</span></div>
+        <div class="cal-ev"><div class="cal-c">💼 Asesoría — Ma. Leticia</div></div>
+        <span class="cal-amt">$5,000.00</span>
+      </div>
+      <div class="cal-row">
+        <div class="cal-date"><span class="cal-d">22</span><span class="cal-m">jul · mié</span></div>
+        <div class="cal-ev"><div class="cal-c">🔧 Luz — CFE</div></div>
+        <span class="cal-amt">~$16,327.00</span>
+      </div>
+    </div>
+    <div>
+      <div class="cal-row">
+        <div class="cal-date"><span class="cal-d">23</span><span class="cal-m">jul · jue</span></div>
+        <div class="cal-ev"><div class="cal-c">🏛️ Impuestos — SAT (antes del 23)</div></div>
+        <span class="cal-amt soft">Variable</span>
+      </div>
+      <div class="cal-row">
+        <div class="cal-date"><span class="cal-d">24</span><span class="cal-m">jul · vie</span></div>
+        <div class="cal-ev"><div class="cal-c">🏢 Arrendamex — cuota autos</div></div>
+        <span class="cal-amt">$95,016.00</span>
+      </div>
+      <div class="cal-row">
+        <div class="cal-date"><span class="cal-d">24</span><span class="cal-m">jul · vie</span></div>
+        <div class="cal-ev"><div class="cal-c">👥 Nómina — semanal (viernes)</div></div>
+        <span class="cal-amt soft">Estimado</span>
+      </div>
+      <div class="cal-row">
+        <div class="cal-date"><span class="cal-d">29</span><span class="cal-m">jul · mié</span></div>
+        <div class="cal-ev"><div class="cal-c">💼 Asesoría — Bertha Echegollen</div></div>
+        <span class="cal-amt">$31,620.50</span>
+      </div>
+      <div class="cal-row">
+        <div class="cal-date"><span class="cal-d">31</span><span class="cal-m">jul · vie</span></div>
+        <div class="cal-ev"><div class="cal-c">👥 Nómina — semanal + quincena</div></div>
+        <span class="cal-amt soft">Estimado</span>
+      </div>
+    </div>
+  </div>
+  <div class="cal-nota">Programación de pagos fijos del mes. Montos fijos/estimados (base junio); impuestos y nómina varían. Además, a lo largo del mes: marketing, telecom y SaaS.</div>
 </div>
 
 <div class="card" style="margin-bottom:20px;">
