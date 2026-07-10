@@ -118,6 +118,20 @@
   .det-rubro-name { font-size: 11px; font-weight: 600; color: #334155; }
   .det-rubro-amt { font-size: 11px; font-weight: 700; color: #0f172a; white-space: nowrap; }
   .det-rubro-prov { font-size: 9px; color: #94a3b8; margin-top: 2px; line-height: 1.35; }
+  .pp-kpis { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+  .pp-kpi { background: #f8fafc; border: 1px solid #f1f5f9; border-radius: 10px; padding: 12px 14px; text-align: center; }
+  .pp-k-val { font-size: 21px; font-weight: 700; color: #0f172a; }
+  .pp-k-lbl { font-size: 9px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 3px; }
+  .pp-bar { height: 8px; background: #fee2e2; border-radius: 5px; overflow: hidden; margin-bottom: 16px; }
+  .pp-fill { height: 100%; background: #22c55e; border-radius: 5px; }
+  .pp-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 22px; }
+  .pp-col-h { font-size: 11px; font-weight: 700; color: #334155; margin-bottom: 6px; padding-bottom: 4px; border-bottom: 1px solid #e2e8f0; }
+  .pp-row { display: flex; justify-content: space-between; gap: 8px; padding: 3px 0; font-size: 11px; border-bottom: 1px solid #f8fafc; }
+  .pp-row .n { color: #475569; }
+  .pp-row .a { font-weight: 600; white-space: nowrap; }
+  .pp-row .a.neg { color: #dc2626; }
+  .pp-row .a.pos { color: #15803d; }
+  .pp-tag { font-size: 8px; padding: 1px 5px; border-radius: 6px; background: #fffbeb; color: #b45309; margin-left: 5px; }
 </style>
 </head>
 <body>
@@ -399,6 +413,79 @@
     <div class="total-row">
       <span class="t-label">TOTAL GASTOS FIJOS</span>
       <span class="t-amount">$949,968.73</span>
+    </div>
+  </div>
+</div>
+
+<div class="card" style="margin-bottom:20px;">
+  <div class="card-header">
+    <div class="card-title">Proyección de Pagos &nbsp;·&nbsp; Julio 2026</div>
+    <span class="badge badge-amber">Falta $640,958.96 (67%)</span>
+  </div>
+  <div class="pp-kpis">
+    <div class="pp-kpi"><div class="pp-k-val">$949,968.73</div><div class="pp-k-lbl">Compromiso fijo (base junio)</div></div>
+    <div class="pp-kpi"><div class="pp-k-val" style="color:#15803d;">$309,009.77</div><div class="pp-k-lbl">Pagado en julio (33%)</div></div>
+    <div class="pp-kpi"><div class="pp-k-val" style="color:#dc2626;">$640,958.96</div><div class="pp-k-lbl">Falta por pagar (67%)</div></div>
+  </div>
+  <div class="pp-bar"><div class="pp-fill" style="width:33%;"></div></div>
+  <div class="pp-cols">
+    <div class="pp-col">
+      <div class="pp-col-h">⭕ Por pagar este mes (36)</div>
+        <div class="pp-row"><span class="n">Reparto Util<span class="pp-tag">parcial</span></span><span class="a neg">$203,205.00</span></div>
+        <div class="pp-row"><span class="n">Deviart<span class="pp-tag">parcial</span></span><span class="a neg">$147,063.80</span></div>
+        <div class="pp-row"><span class="n">Instituto Mexicano Del Seguro Social</span><span class="a neg">$46,630.25</span></div>
+        <div class="pp-row"><span class="n">Bertha Margarita Echegollen Assad</span><span class="a neg">$31,620.50</span></div>
+        <div class="pp-row"><span class="n">Meta Platforms<span class="pp-tag">parcial</span></span><span class="a neg">$30,242.04</span></div>
+        <div class="pp-row"><span class="n">Google Operaciones De Mexico<span class="pp-tag">parcial</span></span><span class="a neg">$23,412.67</span></div>
+        <div class="pp-row"><span class="n">Jose Roberto Muro Sanchez</span><span class="a neg">$20,655.00</span></div>
+        <div class="pp-row"><span class="n">Ivan Garcia Arce<span class="pp-tag">parcial</span></span><span class="a neg">$20,000.00</span></div>
+        <div class="pp-row"><span class="n">Comision Federal De Electricidad</span><span class="a neg">$16,327.00</span></div>
+        <div class="pp-row"><span class="n">Fernando Preciado Silva</span><span class="a neg">$14,571.66</span></div>
+        <div class="pp-row"><span class="n">Shopify<span class="pp-tag">parcial</span></span><span class="a neg">$11,997.44</span></div>
+        <div class="pp-row"><span class="n">AT&T Comercializacion Movil</span><span class="a neg">$11,997.23</span></div>
+        <div class="pp-row"><span class="n">Soluciones Para Ti,</span><span class="a neg">$11,020.00</span></div>
+        <div class="pp-row"><span class="n">Nueva Wal Mart De Mexico</span><span class="a neg">$8,506.05</span></div>
+        <div class="pp-row"><span class="n">Rackspace<span class="pp-tag">parcial</span></span><span class="a neg">$7,683.71</span></div>
+        <div class="pp-row"><span class="n">Integración Estratégica (Contpaq)</span><span class="a neg">$5,672.40</span></div>
+        <div class="pp-row"><span class="n">Maria Leticia Jimenez Gil</span><span class="a neg">$5,000.00</span></div>
+        <div class="pp-row"><span class="n">Grupo Innovador RAV (AUTOAZUR)</span><span class="a neg">$4,640.00</span></div>
+        <div class="pp-row"><span class="n">Klaviyo</span><span class="a neg">$3,917.54</span></div>
+        <div class="pp-row"><span class="n">Total Play Telecomunicaciones</span><span class="a neg">$3,653.00</span></div>
+        <div class="pp-row"><span class="n">Fumylim</span><span class="a neg">$3,456.80</span></div>
+        <div class="pp-row"><span class="n">Aplicaciones Y Proyectos (Microsip)</span><span class="a neg">$2,792.35</span></div>
+        <div class="pp-row"><span class="n">Israel Meza Jimenez</span><span class="a neg">$2,784.00</span></div>
+        <div class="pp-row"><span class="n">Caja Chica Emakers<span class="pp-tag">parcial</span></span><span class="a neg">$2,268.53</span></div>
+        <div class="pp-row"><span class="n">3SIT Integración Y Soluciones</span><span class="a neg">$1,974.78</span></div>
+        <div class="pp-row"><span class="n">Identificacion Electronica Y Automatizacion<span class="pp-tag">parcial</span></span><span class="a neg">$1,891.20</span></div>
+        <div class="pp-row"><span class="n">Pixel Labs / Helium 10</span><span class="a neg">$1,723.71</span></div>
+        <div class="pp-row"><span class="n">Starlink</span><span class="a neg">$1,405.00</span></div>
+        <div class="pp-row"><span class="n">Federal Express (Fedex)<span class="pp-tag">parcial</span></span><span class="a neg">$1,047.65</span></div>
+        <div class="pp-row"><span class="n">Telefonos De Mexico (Telmex)</span><span class="a neg">$987.00</span></div>
+        <div class="pp-row"><span class="n">Nagence</span><span class="a neg">$847.33</span></div>
+        <div class="pp-row"><span class="n">Maria Guadalupe Vera Padilla</span><span class="a neg">$837.25</span></div>
+        <div class="pp-row"><span class="n">Amazon.Com Services</span><span class="a neg">$506.87</span></div>
+        <div class="pp-row"><span class="n">Openai,<span class="pp-tag">parcial</span></span><span class="a neg">$344.68</span></div>
+        <div class="pp-row"><span class="n">Celonis</span><span class="a neg">$330.42</span></div>
+        <div class="pp-row"><span class="n">Canva</span><span class="a neg">$175.00</span></div>
+    </div>
+    <div class="pp-col">
+      <div class="pp-col-h">✅ Ya pagado (16)</div>
+        <div class="pp-row"><span class="n">Cesar Ochoa Castellanos</span><span class="a pos">$89,053.07</span></div>
+        <div class="pp-row"><span class="n">Deviart</span><span class="a pos">$83,799.40</span></div>
+        <div class="pp-row"><span class="n">Reparto Util</span><span class="a pos">$40,213.00</span></div>
+        <div class="pp-row"><span class="n">Meta Platforms</span><span class="a pos">$26,657.00</span></div>
+        <div class="pp-row"><span class="n">Federal Express (Fedex)</span><span class="a pos">$20,255.71</span></div>
+        <div class="pp-row"><span class="n">Google Cloud Mexico</span><span class="a pos">$10,238.18</span></div>
+        <div class="pp-row"><span class="n">Ivan Garcia Arce</span><span class="a pos">$10,000.00</span></div>
+        <div class="pp-row"><span class="n">Identificacion Electronica Y Automatizacion</span><span class="a pos">$7,336.77</span></div>
+        <div class="pp-row"><span class="n">Parque Corporativo Belenes Norte</span><span class="a pos">$5,603.90</span></div>
+        <div class="pp-row"><span class="n">Caja Chica Emakers</span><span class="a pos">$5,266.45</span></div>
+        <div class="pp-row"><span class="n">Shopify</span><span class="a pos">$4,472.99</span></div>
+        <div class="pp-row"><span class="n">Megacable Comunicaciones De Mexico</span><span class="a pos">$3,799.99</span></div>
+        <div class="pp-row"><span class="n">Adobe</span><span class="a pos">$1,610.18</span></div>
+        <div class="pp-row"><span class="n">Google Operaciones De Mexico</span><span class="a pos">$600.40</span></div>
+        <div class="pp-row"><span class="n">Openai,</span><span class="a pos">$87.80</span></div>
+        <div class="pp-row"><span class="n">Rackspace</span><span class="a pos">$14.93</span></div>
     </div>
   </div>
 </div>
